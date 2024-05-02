@@ -18,6 +18,7 @@
         color: black;
         margin-top: 0;
         margin-left: 2px;
+        margin-right: 4px;
     }
 
 
@@ -27,6 +28,9 @@
         border: 2px solid black;
         border-radius: 25px;
     }
+
+
+
 </style>
 </head>
 
@@ -48,7 +52,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0 ml-auto nav justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -65,13 +69,13 @@
                         <a class="nav-link" href="/blog">Blog</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                
             </div>
         </div>
     </nav>
+
+    <!-- New Navbar -->
+
 
 
     <!-- main form of page -->
@@ -84,15 +88,17 @@
                     placeholder="type systems such as itching, sleeping, aching etc">
             </div>
 
+        </br>
+
 
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             Symptoms List
                         </button>
                     </h2>
+
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
@@ -178,7 +184,7 @@
                                 weight_loss
                             </p>
                             <p>
-                                Y -> yellow_crust_ooze yellow_urine, yellowing_of_eyes, yellowish_skin
+                                Y -> yellow_crust_ooze, yellow_urine, yellowing_of_eyes, yellowish_skin
                             </p>
                             </p>
                         </div>
@@ -187,11 +193,13 @@
             </div>
 
 
+
+
             <br>
             <!-- <button type="button" id="startSpeechRecognition" class="btn btn-primary" style="margin-left:3px;border:1px solid white; border-radius:20px;">
             Start Speech Recognition
         </button> -->
-            <br>
+            <!-- <br> -->
 
 
             <!-- Display the transcribed text here -->
