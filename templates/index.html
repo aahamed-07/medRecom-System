@@ -29,7 +29,20 @@
         border-radius: 25px;
     }
 
+    .symp-label{
+        margin-bottom: 7px;
+    }
 
+
+    .accordion-button{
+        height: 40px;
+    }
+
+    .collapse,
+    .collapsing {
+        overflow: auto;
+        max-height: 30vh;
+    }
 
 </style>
 </head>
@@ -80,12 +93,12 @@
 
     <!-- main form of page -->
     <h1 class="mt-4 my-4 text-center text-green">Health Care Center</h1>
-    <div class="container my-4 mt-4" style="background: black; color: white; border-radius: 15px; padding: 40px;">
+    <div class="container my-4 mt-4 w-50" style="background: black; color: white; border-radius: 15px; padding: 40px;">
         <form action="/predict" method="post">
             <div class="form-group">
-                <label for="symptoms">Select Symptoms:</label>
+                <label class="symp-label" for="symptoms">Enter your Symptoms</label>
                 <input type="text" class="form-control" , id="symptoms" name="symptoms"
-                    placeholder="type systems such as itching, sleeping, aching etc">
+                    placeholder="type symptoms such as itching, sleeping, aching etc">
             </div>
 
         </br>
